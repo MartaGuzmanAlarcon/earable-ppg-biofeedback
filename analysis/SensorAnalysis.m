@@ -193,7 +193,7 @@ function f = generateReport(tPPG, rawPPG, cleanPPG, pTimes, pAmps, tAcc, accMag,
 % GENERATEREPORT Creates a synchronized 5-panel research figure.
 %   INPUTS: All processed time vectors, signals, and biometric metrics.
 
-    f = figure('Color', 'w', 'Units', 'normalized', 'Position', [0.1 0.05 0.8 0.9], 'Visible', 'off');
+    f = figure('Color', 'w', 'Units', 'normalized', 'Position', [0.1 0.05 0.8 0.9], 'Visible', 'on');
     
     % Panel 1: Accelerometer (Motion Reference)
     subplot(5,1,1); if ~isempty(accMag), plot(tAcc, accMag, 'k'); end
